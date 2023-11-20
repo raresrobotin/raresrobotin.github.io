@@ -8,9 +8,21 @@
   </head>
   <body>
     <header>
-      <h1>Robotin Rares.</h1>
-      <img height="150" src="images/Robotin Rares.png" alt="selfie" />
-      <p id="job-title">Student @ FastTrackIT</p>
+      <div class="flexbox-container">
+        <div class="flexbox-item">
+          <img
+            class="image"
+            height="150"
+            src="images/Robotin Rares.png"
+            alt="selfie"
+          />
+        </div>
+        <div class="flexbox-item-1">
+          <h1>Robotin Rares</h1>
+          <p id="job-title">Student @ FastTrackIT</p>
+        </div>
+      </div>
+
       <ul id="top-menu-bar">
         <li><a href="#" class="active">HOME</a></li>
         <li><a href="#">Skills</a></li>
@@ -22,9 +34,9 @@
     <section id="content">
       <div id="side-menu">
         <section>
+          <h2>Contact</h2>
           <form action="secretara.html">
-            <h2>Contact</h2>
-            <div>
+            <div class="form-row">
               <label for="userEmail">Email</label>
               <input
                 type="text"
@@ -35,7 +47,7 @@
               />
             </div>
 
-            <div>
+            <div class="form-row">
               <label for="userName">Your Name</label>
               <input
                 type="text"
@@ -45,8 +57,9 @@
                 required
               />
             </div>
-
-            <button type="submit">Send</button>
+            <div>
+              <button type="submit">Send</button>
+            </div>
           </form>
         </section>
         <section>
