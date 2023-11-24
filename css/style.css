@@ -17,6 +17,7 @@ html {
   border-color: #ffffff;
   border-style: double;
   border-width: 6px;
+  height: 125px;
 }
 
 .flexbox-item {
@@ -99,7 +100,7 @@ th {
 }
 
 #job-title {
-  color: rgb(215, 231, 215);
+  color: rgba(2, 22, 29, 0.692);
   text-align: left;
 }
 
