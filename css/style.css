@@ -2,11 +2,11 @@ html {
   height: 100%;
 }
 
-.flexbox-container {
+#flexbox-container {
   flex: 2px;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(100deg, #0433f299, transparent);
+  background: linear-gradient(100deg, #03657e99, transparent);
   align-items: center;
   gap: 15px;
 }
@@ -16,7 +16,7 @@ html {
   border-top-left-radius: 30px;
   border-color: #ffffff;
   border-style: double;
-  border-width: 5px;
+  border-width: 6px;
 }
 
 .flexbox-item {
@@ -76,6 +76,14 @@ body {
   padding: 10px;
   box-shadow: 0px 1px 2px 1px;
   border-radius: 10px 10px 10px 10px;
+}
+
+#flex-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #03657e99;
+  padding: 5px;
 }
 
 td {
