@@ -21,5 +21,5 @@ function updateTitle(title) {
   job.innerHTML = title;
 }
 
-variablesExamples();
-updateTitle("Web Developer @ RWS");
+// variablesExamples();
+// updateTitle("Web Developer @ RWS");
