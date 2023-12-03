@@ -24,9 +24,9 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" class="active">HOME</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#" onclick="showHome()">HOME</a></li>
+        <li><a href="#" onclick="showSkills()">Skills</a></li>
+        <li><a href="#" onclick="showProjects()">Projects</a></li>
         <li><a href="#" onclick="showLanguages()">Languages</a></li>
       </ul>
     </header>
@@ -83,12 +83,12 @@
         </section>
       </div>
       <div id="main">
-        <div>
+        <div id="home" style="display: none">
           <h2>Home</h2>
           <p>Welcome...</p>
         </div>
 
-        <div style="display: none">
+        <div id="skills" style="display: none">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">HTML</li>
@@ -97,7 +97,7 @@
           </ul>
         </div>
 
-        <div style="display: none">
+        <div id="projects" style="display: none">
           <h2>Projects</h2>
           <p>pct.pct.pct</p>
         </div>
