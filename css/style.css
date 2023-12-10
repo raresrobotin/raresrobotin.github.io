@@ -64,14 +64,14 @@ body {
 .form-row {
   flex: 1;
   padding: 2px 40px;
-  margin: 5px 0px 15px 35px;
+  margin: 0px 0px 15px 10px;
   padding-left: 0px;
 }
 
 #button {
   color: #334455;
-  text-align: right;
-  margin-right: 39px;
+  text-align: left;
+  margin-left: 10px;
 }
 
 #rubik-cube {
