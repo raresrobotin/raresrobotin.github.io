@@ -42,6 +42,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: row;
+  background-color: gainsboro;
 }
 #side-menu {
   flex: 0;
@@ -63,20 +64,20 @@ body {
 .form-row {
   flex: 1;
   padding: 2px 40px;
-  margin: 5px 10px 15px 0px;
-  padding-left: 10px;
+  margin: 5px 0px 15px 35px;
+  padding-left: 0px;
 }
 
 #button {
   color: #334455;
   text-align: right;
-  margin-right: 85px;
+  margin-right: 39px;
 }
 
 #rubik-cube {
-  width: 210px;
-  height: 210px;
-  margin: 15px 15px 10px;
+  width: 201px;
+  height: 201px;
+  margin: 25px 25px 25px;
   border: 0px solid black;
 }
 .cube {
