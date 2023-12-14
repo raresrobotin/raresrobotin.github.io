@@ -98,6 +98,10 @@ body {
   background-color: white;
 }
 
+.page {
+  display: none;
+}
+
 #flex-footer {
   display: flex;
   flex-wrap: wrap;
