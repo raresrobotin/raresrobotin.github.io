@@ -43,6 +43,9 @@ body {
   display: flex;
   flex-direction: row;
   background-color: gainsboro;
+  flex-wrap: wrap-reverse;
+
+  justify-content: flex-start;
 }
 #side-menu {
   flex: 0;
