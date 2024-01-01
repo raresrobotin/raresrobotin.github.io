@@ -86,12 +86,52 @@
 // cubeTwo();
 
 function changeColors() {
-  document.querySelector("#one").style.backgroundColor = "purple";
+  document.querySelector("#one").style.backgroundColor = "none";
   document.querySelector("#two").style.backgroundColor = "green";
   document.querySelector("#three").style.backgroundColor = "blue";
 }
-changeColors();
+//changeColors();
 
 document.getElementById("one").addEventListener("click", function () {
-  document.getElementById("two").style.backgroundColor = "blue";
+  document.getElementById("one").style.backgroundColor = "blue";
+});
+
+document.getElementById("two").addEventListener("click", function () {
+  document.getElementById("two").style.backgroundColor = "magenta";
+});
+
+document.getElementById("three").addEventListener("click", function () {
+  document.getElementById("three").style.backgroundColor = "brown";
+});
+
+document.getElementById("four").addEventListener("click", function () {
+  document.getElementById("four").style.backgroundColor = "pink";
+});
+
+document.getElementById("five").addEventListener("click", function () {
+  document.getElementById("five").style.backgroundColor = "yellow";
+});
+
+document.getElementById("six").addEventListener("click", function () {
+  document.getElementById("six").style.backgroundColor = "turquoise";
+});
+
+document.getElementById("seven").addEventListener("click", function () {
+  document.getElementById("seven").style.backgroundColor = "green";
+});
+
+document.getElementById("eight").addEventListener("click", function () {
+  document.getElementById("eight").style.backgroundColor = "purple";
+});
+
+document.getElementById("nine").addEventListener("click", function () {
+  document.getElementById("one").style.backgroundColor = "red";
+  document.getElementById("two").style.backgroundColor = "red";
+  document.getElementById("three").style.backgroundColor = "red";
+  document.getElementById("four").style.backgroundColor = "red";
+  document.getElementById("five").style.backgroundColor = "red";
+  document.getElementById("six").style.backgroundColor = "red";
+  document.getElementById("seven").style.backgroundColor = "red";
+  document.getElementById("eight").style.backgroundColor = "red";
+  document.getElementById("nine").style.backgroundColor = "red";
 });

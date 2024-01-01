@@ -95,6 +95,7 @@ body {
   border: 5px solid;
   float: left;
   -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .cube:hover {
