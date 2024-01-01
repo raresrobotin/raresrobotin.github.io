@@ -1,25 +1,25 @@
-function variabile() {
-  var name = true; //boolean
-  console.info("Male:", name);
-  name = false; //boolean
-  console.info("Female:", name);
-  name = "Rares"; //string
-  console.info("Nume:", name);
-  var age = 35; //number
-  console.info("Rares Robotin", age);
+// function variabile() {
+//   var name = true; //boolean
+//   console.info("Male:", name);
+//   name = false; //boolean
+//   console.info("Female:", name);
+//   name = "Rares"; //string
+//   console.info("Nume:", name);
+//   var age = 35; //number
+//   console.info("Rares Robotin", age);
 
-  // objects [array]
-  var skills = ["html", "css", "js"];
-  console.log("tipul variabilei skills:", typeof skills);
-}
-//variabile();
+//   // objects [array]
+//   var skills = ["html", "css", "js"];
+//   console.log("tipul variabilei skills:", typeof skills);
+// }
+// //variabile();
 
-function changeColor(red) {
-  var color = document.getElementById("blue");
-  console.warn("color:", color);
-  console.info("tipul variabilei color:", typeof color);
-  color.style.backgroundColor = red;
-}
+// function changeColor(red) {
+//   var color = document.getElementById("blue");
+//   console.warn("color:", color);
+//   console.info("tipul variabilei color:", typeof color);
+//   color.style.backgroundColor = red;
+// }
 //changeColor("red");
 
 // CODUL PAGINII HTML[Teme(HTML+CSS)]//
@@ -72,3 +72,26 @@ function changeColor(red) {
 //   document.getElementById("green,yellow,blue").style.backgroundColor =
 //     "magenta";
 // }
+
+// function cubeOne() {
+//   document.querySelector("#one").style.backgroundColor = "blue";
+//   console.info("blue", one);
+// }
+// cubeOne();
+
+// function cubeTwo() {
+//   document.querySelector("#two").style.backgroundColor = "yellow";
+//   console.info("red", two);
+// }
+// cubeTwo();
+
+function changeColors() {
+  document.querySelector("#one").style.backgroundColor = "purple";
+  document.querySelector("#two").style.backgroundColor = "green";
+  document.querySelector("#three").style.backgroundColor = "blue";
+}
+changeColors();
+
+document.getElementById("one").addEventListener("click", function () {
+  document.getElementById("two").style.backgroundColor = "blue";
+});
