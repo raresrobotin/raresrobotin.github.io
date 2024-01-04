@@ -11,20 +11,20 @@ html {
   gap: 15px;
 }
 
-.image {
-  border-bottom-right-radius: 25px;
-  border-top-left-radius: 30px;
-  border-color: #ffffff;
-  border-style: double;
+#flexbox-item img {
   border-width: 6px;
-  height: 125px;
+  height: 135px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 2px 1px 5px 1px;
+  margin: 5px;
 }
 
-.flexbox-item {
+#flexbox-item {
   display: flex;
   justify-content: space-evenly;
 }
-.flexbox-item-1 {
+#flexbox-item-1 {
   align-items: center;
   justify-content: space-evenly;
   min-height: 120px;
