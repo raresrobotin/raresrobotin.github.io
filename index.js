@@ -25,7 +25,7 @@ function initEvents() {
   var toolbar = document.querySelector("#top-menu-bar");
   toolbar.addEventListener("click", function (e) {
     if (e.target.matches("a")) {
-      var page = e.target.innerHTML.toLowerCase();
+      var page = e.target.dataset.page;
       console.warn("event", page);
       showPage(page);
     }
