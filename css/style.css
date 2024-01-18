@@ -211,8 +211,8 @@ th {
 }
 
 .favorite {
-  /*font-weight: bold;*/
-  color: black;
+  font-weight: bold;
+  color: rgb(10, 10, 238);
 }
 
 .favorite li {
@@ -221,4 +221,8 @@ th {
 
 td.favorite {
   font-weight: normal;
+}
+
+#skills li span {
+  color: green;
 }
