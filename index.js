@@ -5,7 +5,7 @@ var activePage = "skills";
 function $(selector) {
   console.info("gaseste elementul: %o ", selector);
 
-  var el = document.querySelector(selector);
+  var el = $(selector);
   console.info("elementul gasit este:", el);
   return el;
 }
@@ -46,7 +46,7 @@ function initEvents() {
 }
 
 function showSkills() {
-  var ul = document.querySelector("#skills ul");
+  var ul = $("#skills ul");
 
   var skills = [
     { name: "HTML", endorcements: 6, favorite: true },
