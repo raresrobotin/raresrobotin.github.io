@@ -16,7 +16,7 @@ function hide(id) {
 function show(id) {
   console.info("show", id);
   var page = $(`#${id}`);
-  console.info("page", page);
+  console.info("show page", page);
   page.style.display = "block";
 }
 
@@ -43,21 +43,15 @@ function initEvents() {
   });
 }
 
-function showSkills() {
+function showSkills(skills) {
   var ul = $("#skills ul");
-
-  var skills = [
-    { name: "HTML", endorcements: 6, favorite: true },
-    { name: "CSS", endorcements: 5 },
-    { name: "JS", endorcements: 7, favorite: true },
-    { name: "Word", endorcements: 1, favorite: false },
-  ];
 
   var text = skills.map(function (skill) {
     var cls = "";
     if (skill.favorite == true) {
       cls = "favorite";
     }
+
     console.info("%o (%o)", skill.name, cls);
     return `<li class="${cls}">${skill.name} <span> - ${skill.endorcements}</span></li>`;
   });
@@ -67,6 +61,6 @@ function showSkills() {
 }
 
 //executii
-showSkills();
+//showSkills([]);
 showPage(activePage);
 initEvents();
