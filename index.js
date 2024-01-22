@@ -60,25 +60,17 @@ function showSkills(skills) {
   ul.innerHTML = text.join("");
 }
 
-// TEMA
-function showRubik() {
-  var div = document.querySelector("#rubik-cube");
-  console.warn("am selectat:", div);
-
-  var cubes = ["div", "div", "div"];
-  console.warn("cubes:", typeof cubes);
-
-  var rubik = cubes.map(function (cube) {
-    console.info("inside %o map", cube);
-    return `<div>${cubes}<div/>`;
+function loadSkills() {
+  var promise = fetch("skills.json");
+  promise.then(function (r) {
+    const jsonPromise = r.json();
+    jsonPromise.then(function (skills) {
+      showSkills(skills);
+    });
   });
-  console.warn(rubik);
-
-  div.innerHTML = rubik;
 }
-showRubik();
 
 //executii
-//showSkills([]);
 showPage(activePage);
 initEvents();
+loadSkills();
