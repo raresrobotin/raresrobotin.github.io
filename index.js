@@ -1,5 +1,5 @@
 //variabile publice/globale
-let activePage = "skills";
+let activePage = "home";
 
 //functii publice
 function $(selector) {
