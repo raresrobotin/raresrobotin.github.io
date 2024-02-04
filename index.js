@@ -53,8 +53,8 @@ function sortByName(a, b) {
 }
 
 function showSkills(skills) {
-  //skills.sort(sortSkillsByEndorcements);
-  skills.sort(sortByName);
+  skills.sort(sortSkillsByEndorcements);
+  //skills.sort(sortByName);
   const ul = $("#skills ul");
 
   const text = skills.map((skill) => {

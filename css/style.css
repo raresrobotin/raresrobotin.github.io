@@ -2,13 +2,17 @@ html {
   height: 100%;
 }
 
+header {
+  position: relative;
+}
+
 #flexbox-container {
   flex: 2;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(100deg, #03657e99, transparent);
+  background-color: #090909;
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
   align-items: center;
-  gap: 0px;
 }
 
 #flexbox-item img {
@@ -16,7 +20,7 @@ html {
   height: 130px;
   border-radius: 15%;
   border: 2px solid #fff;
-  box-shadow: 2px 2px 5px 2px;
+  box-shadow: 0 0 15px rgb(7, 182, 245), 0 0 5px rgb(7, 182, 245);
   margin: 10px;
 }
 
@@ -31,6 +35,7 @@ html {
   min-height: 120px;
   flex: 1;
   padding: 10px;
+  color: #f2f9f9;
 }
 
 body {
@@ -38,32 +43,46 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(235, 231, 231);
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  background-color: #090909;
 }
 
 #content {
-  flex: 1;
+  flex: 5;
   display: flex;
   flex-direction: row;
-  background-color: gainsboro;
+  width: 85%;
+  margin: 0 auto;
+  padding: 5px;
+  gap: 8px;
   flex-wrap: wrap-reverse;
   justify-content: flex-start;
+  background-color: #090909;
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
 }
+
 #side-menu {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 5px 5px 5px 5px;
+  gap: 8px;
 }
 
 #side-menu > section {
   margin-bottom: 10px;
   padding: 10px;
   box-shadow: 0px 1px 2px 1px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 10px rgb(7, 182, 245), 0 0 10px rgb(7, 182, 245);
+  border-style: none;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png");
 }
 
 #side-menu > section h2 {
   margin: 0 0 10px 0;
-  color: #334455;
+  color: #ffffff;
+  padding-left: 10px;
 }
 
 #contact-form {
@@ -73,9 +92,15 @@ body {
 .form-row {
   flex: 1;
   min-width: 1px;
-  padding: 5px 40px;
+  padding: 5px 20px;
   margin: 0px 0px 10px 10px;
   padding-left: 0px;
+}
+
+.form-row > label {
+  color: rgb(7, 182, 245);
+  font-size: x-large;
+  font-family: monospace;
 }
 
 #button {
@@ -110,9 +135,11 @@ body {
   flex: 5;
   margin: 5px;
   padding: 10px;
-  box-shadow: 0px 1px 2px 1px;
-  border-radius: 10px 10px 10px 10px;
-  background-color: white;
+  box-shadow: 0 0 15px rgb(7, 182, 245), 0 0 5px rgb(7, 182, 245);
+  border-radius: 5px 5px 5px 5px;
+  border-style: none;
+  border-color: rgb(7, 182, 245);
+  background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png");
 }
 
 .page {
@@ -123,13 +150,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #334455;
+  background-color: #060c21;
   padding: 5px;
 }
 
 .footer-item {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.footer-item a:hover {
+  box-shadow: 0 0 5px #006bb8, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
 
 .stylish-table {
@@ -138,7 +175,7 @@ body {
   margin-top: 20px;
   font-family: "Arial", sans-serif;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(150, 15, 15, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -155,7 +192,7 @@ th {
 }
 
 tr:hover {
-  background-color: #29b6b6;
+  background-color: rgb(255, 255, 255);
 }
 
 td:last-child {
@@ -166,23 +203,18 @@ th:last-child {
   text-align: center;
 }
 
-/*
-td {
-  padding: 5px;
-}
-th {
-  padding: 5px;
-}
-*/
-
 #job-title {
-  color: rgba(2, 22, 29, 0.692);
+  color: rgb(7, 182, 245);
   text-align: left;
+}
+
+#job-title p {
+  color: aqua;
 }
 
 #top-menu-bar {
   text-align: center;
-  background-color: #334455;
+  background-color: #060c21;
   color: #fff;
   margin: 0px;
   padding: 4px;
@@ -199,6 +231,9 @@ th {
   padding: 5px 10px;
   border-radius: 4px;
   transition: 0.5s;
+  font-size: x-large;
+  font-family: monospace;
+  font-weight: bold;
 }
 #top-menu-bar a:visited {
   color: #fff;
@@ -208,11 +243,13 @@ th {
 #top-menu-bar a:hover {
   color: #334455;
   background: #fff;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
 
 .favorite {
   font-weight: bold;
-  color: rgb(10, 10, 238);
+  color: #0396ff;
 }
 
 .favorite li {
@@ -223,6 +260,78 @@ td.favorite {
   font-weight: normal;
 }
 
+#skills {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 #skills li span {
-  color: green;
+  color: rgb(255, 255, 255);
+}
+
+body p {
+  color: rgb(5, 183, 247);
+  text-decoration: solid;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: none;
+}
+
+body h2 {
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+  font-size: xx-large;
+}
+
+/* NEW CODE */
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #006bb8;
+  box-shadow: 0 0 15px #00b894;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #006bb8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+button {
+  box-shadow: 0 0 5px cyan, 0 0 15px cyan;
+
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 1rem;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all linear 0.5s;
+  margin-top: 1rem;
+}
+
+button:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
