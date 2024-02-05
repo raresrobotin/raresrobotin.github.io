@@ -228,10 +228,10 @@ th:last-child {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 5px;
   border-radius: 4px;
   transition: 0.5s;
-  font-size: x-large;
+  font-size: large;
   font-family: monospace;
   font-weight: bold;
 }
