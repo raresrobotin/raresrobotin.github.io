@@ -34,7 +34,7 @@ header {
   justify-content: space-evenly;
   min-height: 120px;
   flex: 1;
-  padding: 10px;
+  padding: none;
   color: #f2f9f9;
   display: inline-block;
 }
@@ -208,7 +208,8 @@ th:last-child {
   overflow: hidden;
   border-right: 0.25em solid rgb(255, 255, 255);
   white-space: nowrap;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-family: monospace;
   width: none;
   animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
 }
