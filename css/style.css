@@ -36,6 +36,7 @@ header {
   flex: 1;
   padding: 10px;
   color: #f2f9f9;
+  display: inline-block;
 }
 
 body {
@@ -204,8 +205,28 @@ th:last-child {
 }
 
 #job-title {
-  color: rgb(7, 182, 245);
-  text-align: left;
+  overflow: hidden;
+  border-right: 0.25em solid rgb(255, 255, 255);
+  white-space: nowrap;
+  font-size: 1.3rem;
+  width: none;
+  animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
+}
+@keyframes typing {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 205px;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
 }
 
 #job-title p {
