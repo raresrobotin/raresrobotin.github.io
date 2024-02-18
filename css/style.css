@@ -208,11 +208,11 @@ th:last-child {
   overflow: hidden;
   border-right: 0.25em solid rgb(255, 255, 255);
   white-space: nowrap;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-family: monospace;
   letter-spacing: none;
   width: none;
-  animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
+  animation: typing 1.5s steps(20, end) forwards, blink 0.8s infinite;
 }
 @keyframes typing {
   from {
@@ -227,7 +227,7 @@ th:last-child {
     border-color: transparent;
   }
   to {
-    border-color: orange;
+    border-color: rgb(255, 255, 255);
   }
 }
 
